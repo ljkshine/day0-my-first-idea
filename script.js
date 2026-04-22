@@ -1,4 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Hamburger Menu Logic
+    const hamburgerBtn = document.querySelector('.hamburger-btn');
+    const siteNav = document.querySelector('.site-nav');
+
+    hamburgerBtn.addEventListener('click', () => {
+        hamburgerBtn.classList.toggle('active');
+        siteNav.classList.toggle('active');
+    });
+
     const card = document.getElementById('idea-card');
     const heading = document.getElementById('main-heading');
 
